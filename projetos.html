@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos — Felipe Lima Machado</title>
+<meta name="description" content="Projetos desenvolvidos por Felipe Lima Machado: conversor de moedas, calculadora de IMC, landing page e dashboard com dados em tempo real.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">felipe<span>.</span>dev</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#processo">Como funciona</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="https://wa.me/5511989954030" class="is-cta" target="_blank" rel="noopener">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="about-hero" style="padding-bottom: 40px;">
+  <div class="container">
+    <p class="about-hero__role">Projetos</p>
+    <h1>O que eu já construí</h1>
+    <p style="max-width: 560px; margin-top: 10px;">
+      Uma seleção de projetos práticos, feitos para treinar e demonstrar as tecnologias que uso no dia a dia —
+      de consumo de APIs a design de interface.
+    </p>
+  </div>
+</header>
+
+<section class="section" style="border-bottom: none; padding-top: 24px;">
+  <div class="container">
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-card__thumb" style="background: linear-gradient(135deg, #0c1220, #16324f);">$ conversor --moedas</div>
+        <div class="project-card__body">
+          <h3>Conversor de Moedas</h3>
+          <p>Conversão entre moedas com cotações reais, consumindo uma API pública de câmbio em tempo real.</p>
+          <div class="project-card__tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API REST</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://conversor-moedas-blue.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Ver ao vivo</a>
+            <a href="https://github.com/Theprofelipe/conversor-moedas" target="_blank" rel="noopener" class="btn btn--ghost">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__thumb" style="background: linear-gradient(135deg, #0e1116, #143a52);">$ calcular --imc</div>
+        <div class="project-card__body">
+          <h3>Calculadora de IMC</h3>
+          <p>Calculadora de Índice de Massa Corporal com resultado visual em faixas coloridas e explicação de cada categoria.</p>
+          <div class="project-card__tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://calculadora-imc-henna-one.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Ver ao vivo</a>
+            <a href="https://github.com/Theprofelipe/calculadora-imc" target="_blank" rel="noopener" class="btn btn--ghost">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__thumb" style="background: linear-gradient(135deg, #3a2a1c, #6b4126);">$ landing --cafeteria</div>
+        <div class="project-card__body">
+          <h3>Landing Page — Grão &amp; Cia</h3>
+          <p>Página de vendas para uma cafeteria fictícia, com identidade visual própria, seções de cardápio, depoimentos e localização.</p>
+          <div class="project-card__tags">
+            <span>HTML</span><span>CSS</span><span>Design responsivo</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://cafeteria-landing-six.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Ver ao vivo</a>
+            <a href="https://github.com/Theprofelipe/cafeteria-landing" target="_blank" rel="noopener" class="btn btn--ghost">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__thumb" style="background: linear-gradient(135deg, #0a0e16, #23204f);">$ dashboard --cripto</div>
+        <div class="project-card__body">
+          <h3>Dashboard Cripto</h3>
+          <p>Painel com dados de mercado de criptomoedas em tempo real, incluindo gráficos de variação dos últimos 7 dias.</p>
+          <div class="project-card__tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span><span>API REST</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://dashboard-cripto-eight.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Ver ao vivo</a>
+            <a href="https://github.com/Theprofelipe/dashboard-cripto" target="_blank" rel="noopener" class="btn btn--ghost">Código</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: none; padding-top: 0;">
+  <div class="container why-cta" style="max-width: 640px; text-align: center; margin: 0 auto;">
+    <h3>Gostou do que viu?</h3>
+    <p>Posso construir algo parecido — ou bem diferente — para o seu negócio.</p>
+    <a href="index.html#contato" class="btn btn--primary">Vamos conversar</a>
+  </div>
+</section>
+
+<a href="https://wa.me/5511989954030" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<footer class="footer">
+  <p>Felipe Lima Machado — © <span id="year"></span> Todos os direitos reservados.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

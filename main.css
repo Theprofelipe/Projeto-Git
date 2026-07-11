@@ -272,6 +272,26 @@ p { margin: 0 0 1rem; color: var(--text-muted); }
   align-items: center;
 }
 
+.hero__person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hero__person-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hero__person-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero__person-name { font-weight: 600; font-size: 15px; color: var(--text); }
+.hero__person-role { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); }
+
 .hero h1 {
   font-size: clamp(32px, 4.6vw, 52px);
   margin-bottom: 20px;
